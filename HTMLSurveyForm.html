@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<link rel="Stylesheet" href="StyleSheetSurveyForm.css" />
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center blue-text">Favorite Comics Survey</h1>
+            <p id="description" class="description text-center blue-text">
+                This survey is to determine which comics are most popular. Thank you for your participation
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label class="blue-text" id="name-label" for="name">Name</label>
+                <input type="text"
+                       name="name"
+                       id="name"
+                       class="form-control"
+                       placeholder="Enter your name"
+                       required />
+            </div>
+            <div class="form-group">
+                <label class="blue-text" id="email-label"
+                       for="email">Email</label>
+                <input type="email"
+                       name="email"
+                       id="email"
+                       class="form-control"
+                       placeholder="Enter your Email"
+                       required />
+            </div>
+            <div class="form-group blue-text">
+                <label id="number-label" for="number">
+                    Age<span class="clue">(optional)</span>
+                </label>
+                <input type="number"
+                       name="age"
+                       id="number"
+                       min="6"
+                       max="99"
+                       class="form-control"
+                       placeholder="Age" />
+            </div>
+            <div class="form-group blue-text">
+                <label id="character-label" for="character">Who is your favorite comic book character?</label>
+                <input name="character"
+                       type="text"
+                       id="characters"
+                       class="form-control"
+                       placeholder="Favorite Character"</>
+            </div>
+
+            <div class="form-group blue-text">
+                <p>Do you prefer the movies or books more?</p>
+                <select id="dropdown" name="publication" class="form-control" required>
+                    <option disabled selected value>TV, Books or Animation</option>
+                    <option value="movies">Movies</option>
+                    <option value="books">Books</option>
+                    <option value="animation">Animation</option>
+                    <option value="all">All</option>
+                </select>
+            </div>
+
+            <div class="form-group blue-text">
+                <p>Do you read Indie Comics?</p>
+                <label>
+                    <input name="read-indie"
+                           value="absolutely"
+                           type="radio"
+                           class="input-radio"
+                           checked />Absolutely
+                </label>
+                <label>
+                    <input name="read-indie"
+                           value="some"
+                           type="radio"
+                           class="input-radio" />Some
+                </label>
+                <label>
+                    <input name="read-indie"
+                           value="Not really"
+                           type="radio"
+                           class="input-radio" />Not really
+                </label>
+            </div>
+
+            <div class="form-group blue-text">
+                <p>
+                    What is your favorite comic book publisher?
+                    <span class="clue">(check all that apply)</span>
+                </p>
+
+                <label>
+                    <input name="prefer"
+                           value="marvel"
+                           type="checkbox"
+                           class="input checkbox" />Marvel
+                </label>
+
+                <label>
+                    <input name="prefer"
+                           value="dc"
+                           type="checkbox"
+                           class="input checkbox" />DC
+                </label>
+
+                <label>
+                    <input name="prefer"
+                           value="darkhorse"
+                           type="checkbox"
+                           class="input checbox" />Dark Horse
+                </label>
+
+                <label>
+                    <input name="prefer"
+                           value="image"
+                           type="checkbox"
+                           class="input checkbox" />Image
+                </label>
+
+                <label>
+                    <input name="prefer"
+                           value="valiant"
+                           type="checkbox"
+                           class="input checkbox" />Valiant
+                </label>
+
+                <label>
+                    <input name="prefer"
+                           value="boom"
+                           type="checkbox"
+                           class="input checkbox" />Boom!
+                </label>
+
+                <label>
+                    <input name="prefer"
+                           value="lionforge"
+                           type="checkbox"
+                           class="input checkbox" />Lion Forge
+                </label>
+                </div>
+                <div class="form-group">
+                    <p>Comments or suggestions</p>
+                    <textarea id="comments"
+                              class="input-textarea"
+                              name="comment"
+                              placeholder="Please add comments here..."></textarea>
+                </div>
+
+
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+        </form>
+    </div>
+</body>
+</html>
